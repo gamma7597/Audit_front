@@ -2,88 +2,91 @@
   <div>
     <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
     <b-form @submit.prevent="handleSubmit">
-      <b-form-group id="adm_rules_1" label="Nom du contact principal" label-for="adm_rules_1-select">
+      <b-form-group id="adm_rules_1" label="Le code source de l'application doit faire l'objet de revues de sécurité (manuelle ou via un outil automatisé)" label-for="adm_rules_1-select">
         <b-form-select id="adm_rules_1-select" v-model="formData.adm_1" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_1_comment" label="Nom du contact principal" label-for="adm_rules_1_comment-select">
+      <b-form-group id="adm_rules_1_comment" label="Commentaire du partenaire" label-for="adm_rules_1_comment-select">
         <b-form-input id="adm_rules_1_comment-input" v-model="formData.adm_1_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_1_impact" label="Nom du contact principal" label-for="adm_rules_1_impact-select">
+      <b-form-group id="adm_rules_1_impact" label="Impact" label-for="adm_rules_1_impact-select">
         <b-form-select id="adm_rules_1_impact-select" v-model="formData.adm_1_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_1_engie" label="Nom du contact principal" label-for="adm_rules_1_engie-select">
+      <b-form-group id="adm_rules_1_engie" label="Commentaire EHS" label-for="adm_rules_1_engie-select">
         <b-form-input id="adm_rules_1_engie-input" v-model="formData.adm_1_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_2" label="Nom du contact principal" label-for="adm_rules_2-select">
+      <b-form-group id="adm_rules_2" label="Le partenaire doit utiliser des algorithmes et des protocoles de chiffrement non obsolètes. 
+Préciser lesquelles" label-for="adm_rules_2-select">
         <b-form-select id="adm_rules_2-select" v-model="formData.adm_2" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_2_comment" label="Nom du contact principal" label-for="adm_rules_2_comment-select">
+      <b-form-group id="adm_rules_2_comment" label="Commentaire du partenaire" label-for="adm_rules_2_comment-select">
         <b-form-input id="adm_rules_2_comment-input" v-model="formData.adm_2_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_2_impact" label="Nom du contact principal" label-for="adm_rules_2_impact-select">
+      <b-form-group id="adm_rules_2_impact" label="Impact" label-for="adm_rules_2_impact-select">
         <b-form-select id="adm_rules_2_impact-select" v-model="formData.adm_2_impact" :options="options2" required></b-form-select>
       </b-form-group>d
-      <b-form-group id="adm_rules_2_engie" label="Nom du contact principal" label-for="adm_rules_2_engie-select">
+      <b-form-group id="adm_rules_2_engie" label="Commentaire EHS" label-for="adm_rules_2_engie-select">
         <b-form-input id="adm_rules_2_engie-input" v-model="formData.adm_2_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_3" label="Nom du contact principal" label-for="adm_rules_3-select">
+      <b-form-group id="adm_rules_3" label="Le partenaire doit protéger les clés de chiffrement (Ex: utilisation d'un coffre fort) " label-for="adm_rules_3-select">
         <b-form-select id="adm_rules_3-select" v-model="formData.a_3" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_3_comment" label="Nom du contact principal" label-for="adm_rules_3_comment-select">
+      <b-form-group id="adm_rules_3_comment" label="Commentaire du partenaire" label-for="adm_rules_3_comment-select">
         <b-form-input id="adm_rules_3_comment-input" v-model="formData.adm_3_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_3_impact" label="Nom du contact principal" label-for="adm_rules_3_impact-select">
+      <b-form-group id="adm_rules_3_impact" label="Impact" label-for="adm_rules_3_impact-select">
         <b-form-select id="adm_rules_3_impact-select" v-model="formData.adm_3_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_3_engie" label="Nom du contact principal" label-for="adm_rules_3_engie-select">
+      <b-form-group id="adm_rules_3_engie" label="Commentaire EHS" label-for="adm_rules_3_engie-select">
         <b-form-input id="adm_rules_3_engie-input" v-model="formData.adm_3_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_4" label="Nom du contact principal" label-for="adm_rules_4-select">
+      <b-form-group id="adm_rules_4" label="L'environnement de développement (données de test, code source) doit être sécurisé (contrôle des accès, traçabilité..) " label-for="adm_rules_4-select">
         <b-form-select id="adm_rules_4-select" v-model="formData.a_4" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_4_comment" label="Nom du contact principal" label-for="adm_rules_4_comment-select">
+      <b-form-group id="adm_rules_4_comment" label="Commentaire du partenaire" label-for="adm_rules_4_comment-select">
         <b-form-input id="adm_rules_4_comment-input" v-model="formData.adm_4_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_4_impact" label="Nom du contact principal" label-for="adm_rules_4_impact-select">
+      <b-form-group id="adm_rules_4_impact" label="Impact" label-for="adm_rules_4_impact-select">
         <b-form-select id="adm_rules_4_impact-select" v-model="formData.adm_4_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_4_engie" label="Nom du contact principal" label-for="adm_rules_4_engie-select">
+      <b-form-group id="adm_rules_4_engie" label="Commentaire EHS" label-for="adm_rules_4_engie-select">
         <b-form-input id="adm_rules_4_engie-input" v-model="formData.adm_4_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_5" label="Nom du contact principal" label-for="adm_rules_5-select">
+      <b-form-group id="adm_rules_5" label="Le partenaire doit sécuriser les API " label-for="adm_rules_5-select">
         <b-form-select id="adm_rules_5-select" v-model="formData.a_5" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_5_comment" label="Nom du contact principal" label-for="adm_rules_5_comment-select">
+      <b-form-group id="adm_rules_5_comment" label="Commentaire du partenaire" label-for="adm_rules_5_comment-select">
         <b-form-input id="adm_rules_5_comment-input" v-model="formData.adm_5_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_5_impact" label="Nom du contact principal" label-for="adm_rules_5_impact-select">
+      <b-form-group id="adm_rules_5_impact" label="Impact" label-for="adm_rules_5_impact-select">
         <b-form-select id="adm_rules_5_impact-select" v-model="formData.adm_5_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_5_engie" label="Nom du contact principal" label-for="adm_rules_5_engie-select">
+      <b-form-group id="adm_rules_5_engie" label="Commentaire EHS" label-for="adm_rules_5_engie-select">
         <b-form-input id="adm_rules_5_engie-input" v-model="formData.adm_5_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_6" label="Nom du contact principal" label-for="adm_rules_6-select">
+      <b-form-group id="adm_rules_6" label="Présence de règles de développement :
+les développeurs doivent être sensibilisés aux bonnes pratiques de développement telles que la configuration des web application headers ou les principales menaces telles que décrites dans l'OWASP
+https://owasp.org/www-project-top-ten/" label-for="adm_rules_6-select">
         <b-form-select id="adm_rules_6-select" v-model="formData.adm_6" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_6_comment" label="Nom du contact principal" label-for="adm_rules_6_comment-select">
+      <b-form-group id="adm_rules_6_comment" label="Commentaire du partenaire" label-for="adm_rules_6_comment-select">
         <b-form-input id="adm_rules_6_comment-input" v-model="formData.adm_6_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_6_impact" label="Nom du contact principal" label-for="adm_rules_6_impact-select">
+      <b-form-group id="adm_rules_6_impact" label="Impact" label-for="adm_rules_6_impact-select">
         <b-form-select id="adm_rules_6_impact-select" v-model="formData.a_6_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_6_engie" label="Nom du contact principal" label-for="adm_rules_6_engie-select">
+      <b-form-group id="adm_rules_6_engie" label="Commentaire EHS" label-for="adm_rules_6_engie-select">
         <b-form-input id="adm_rules_6_engie-input" v-model="formData.adm_6_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_7" label="Nom du contact principal" label-for="adm_rules_7-select">
+      <b-form-group id="adm_rules_7" label="Les données de production doivent être utilisées seulement sur des environnements de production " label-for="adm_rules_7-select">
         <b-form-select id="adm_rules_7-select" v-model="formData.adm_7" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_7_comment" label="Nom du contact principal" label-for="adm_rules_7_comment-select">
+      <b-form-group id="adm_rules_7_comment" label="Commentaire du partenaire" label-for="adm_rules_7_comment-select">
         <b-form-input id="adm_rules_7_comment-input" v-model="formData.adm_7_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="adm_rules_7_impact" label="Nom du contact principal" label-for="adm_rules_7_impact-select">
+      <b-form-group id="adm_rules_7_impact" label="Impact" label-for="adm_rules_7_impact-select">
         <b-form-select id="adm_rules_7_impact-select" v-model="formData.adm_7_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="adm_rules_7_engie" label="Nom du contact principal" label-for="adm_rules_7_engie-select">
+      <b-form-group id="adm_rules_7_engie" label="Commentaire EHS" label-for="adm_rules_7_engie-select">
         <b-form-input id="adm_rules_7_engie-input" v-model="formData.adm_7_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Envoyer</b-button>

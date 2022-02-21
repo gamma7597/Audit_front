@@ -1,10 +1,12 @@
 <template>
   <div>
-    <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
+    <b-button :to="'/rules/' + partner.company" variant="success"
+      >Retour</b-button
+    >
     <b-form @submit.prevent="handleSubmit">
       <b-form-group
         id="tdt_rules_1"
-        label="Accès applicatif (ex : filtrage applicatif)"
+        label="Informations Commercialement Sensibles (ICS)"
         label-for="tdt_rules_1-select"
       >
         <b-form-select
@@ -16,7 +18,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_1_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="tdt_rules_1_comment-select"
       >
         <b-form-input
@@ -27,7 +29,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_2"
-        label="Accès VPN (Global Protect) / Firewall"
+        label="Données à Caractère Personnel (DCP) (employés et/ou client EHS)"
         label-for="tdt_rules_2-select"
       >
         <b-form-select
@@ -39,7 +41,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_2_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="tdt_rules_2_comment-select"
       >
         <b-form-input
@@ -50,7 +52,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_3"
-        label="Accès ZPA"
+        label="Informations concernant des méthodes, outils de travail et/ou stratégies d'EHS"
         label-for="tdt_rules_3-select"
       >
         <b-form-select
@@ -62,7 +64,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_3_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="tdt_rules_3_comment-select"
       >
         <b-form-input
@@ -73,7 +75,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_4"
-        label="Accès lien réseau Wan dédié (MPLS)"
+        label="Informations bancaire/financière"
         label-for="tdt_rules_4-select"
       >
         <b-form-select
@@ -85,7 +87,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_4_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="tdt_rules_4_comment-select"
       >
         <b-form-input
@@ -96,7 +98,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_5"
-        label="Depuis un réseau externe en SSO ENGIE avec OKTA"
+        label="Données B2C"
         label-for="tdt_rules_5-select"
       >
         <b-form-select
@@ -108,7 +110,7 @@
       </b-form-group>
       <b-form-group
         id="tdt_rules_5_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="tdt_rules_5_comment-select"
       >
         <b-form-input
@@ -132,13 +134,13 @@ export default {
       formData: {},
       options: [
         { value: "Oui", text: "Oui" },
-        { value: "Non", text: "Non" }
-      ]
+        { value: "Non", text: "Non" },
+      ],
     };
   },
   computed: {
     ...mapState("tdt_rules", ["tdt_rules"]),
-    ...mapState("partner", ["partner"])
+    ...mapState("partner", ["partner"]),
   },
   methods: {
     ...mapActions("tdt_rules", ["edit_tdt_rules"]),
@@ -161,11 +163,11 @@ export default {
         },
       };
       this.edit_tdt_rules(payload);
-      this.formData = this.tdt_rules
+      this.formData = this.tdt_rules;
     },
   },
   mounted() {
-      this.formData = this.tdt_rules
-    }
+    this.formData = this.tdt_rules;
+  },
 };
 </script>

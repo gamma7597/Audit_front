@@ -1,6 +1,8 @@
 <template>
   <div>
-    <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
+    <b-button :to="'/rules/' + partner.company" variant="success"
+      >Retour</b-button
+    >
     <b-form @submit.prevent="handleSubmit">
       <b-form-group
         id="co_rules_1"
@@ -16,7 +18,7 @@
       </b-form-group>
       <b-form-group
         id="co_rules_1_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="co_rules_1_comment-select"
       >
         <b-form-input
@@ -62,7 +64,7 @@
       </b-form-group>
       <b-form-group
         id="co_rules_3_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="co_rules_3_comment-select"
       >
         <b-form-input
@@ -85,7 +87,7 @@
       </b-form-group>
       <b-form-group
         id="co_rules_4_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="co_rules_4_comment-select"
       >
         <b-form-input
@@ -108,7 +110,7 @@
       </b-form-group>
       <b-form-group
         id="co_rules_5_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="co_rules_5_comment-select"
       >
         <b-form-input
@@ -131,7 +133,7 @@
       </b-form-group>
       <b-form-group
         id="co_rules_6_comment"
-        label=""
+        label="Commentaire du partenaire"
         label-for="co_rules_6_comment-select"
       >
         <b-form-input
@@ -155,18 +157,18 @@ export default {
       formData: {},
       options: [
         { value: "Oui", text: "Oui" },
-        { value: "Non", text: "Non" }
-      ]
+        { value: "Non", text: "Non" },
+      ],
     };
   },
   computed: {
     ...mapState("co_rules", ["co_rules"]),
-    ...mapState("partner", ["partner"])
+    ...mapState("partner", ["partner"]),
   },
   methods: {
     ...mapActions("co_rules", ["edit_co_rules"]),
     handleSubmit() {
-      console.log(this.co_rules)
+      console.log(this.co_rules);
       const payload = {
         company: this.co_rules.company,
         data: {
@@ -187,11 +189,11 @@ export default {
         },
       };
       this.edit_co_rules(payload);
-      this.formData = this.co_rules
+      this.formData = this.co_rules;
     },
   },
   mounted() {
-    this.formData = this.co_rules
-  }
+    this.formData = this.co_rules;
+  },
 };
 </script>

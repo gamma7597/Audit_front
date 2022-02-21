@@ -2,28 +2,28 @@
   <div>
     <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
     <b-form @submit.prevent="handleSubmit">
-      <b-form-group id="rgpd_rules_1" label="Nom du contact principal" label-for="rgpd_rules_1-select">
+      <b-form-group id="rgpd_rules_1" label="La nature de la prestation (finalité du traitement) et des données justifient l’instruction d’un dossier DPIA" label-for="rgpd_rules_1-select">
         <b-form-select id="rgpd_rules_1-select" v-model="formData.rgpd_1" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="rgpd_rules_1_comment" label="Nom du contact principal" label-for="rgpd_rules_1_comment-select">
+      <b-form-group id="rgpd_rules_1_comment" label="Commentaire du partenaire" label-for="rgpd_rules_1_comment-select">
         <b-form-input id="rgpd_rules_1_comment-input" v-model="formData.rgpd_1_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="rgpd_rules_1_impact" label="Nom du contact principal" label-for="rgpd_rules_1_impact-select">
+      <b-form-group id="rgpd_rules_1_impact" label="Impact" label-for="rgpd_rules_1_impact-select">
         <b-form-select id="rgpd_rules_1_impact-select" v-model="formData.rgpd_1_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="rgpd_rules_1_engie" label="Nom du contact principal" label-for="rgpd_rules_1_engie-select">
+      <b-form-group id="rgpd_rules_1_engie" label="Commentaire EHS" label-for="rgpd_rules_1_engie-select">
         <b-form-input id="rgpd_rules_1_engie-input" v-model="formData.rgpd_1_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="rgpd_rules_2" label="Nom du contact principal" label-for="rgpd_rules_2-select">
+      <b-form-group id="rgpd_rules_2" label="La protection des données personnelles est prise en compte dès le début des projets (Privacy By Design) et avec le plus haut niveau de protection possible (Privacy By Default)" label-for="rgpd_rules_2-select">
         <b-form-select id="rgpd_rules_2-select" v-model="formData.rgpd_2" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="rgpd_rules_2_comment" label="Nom du contact principal" label-for="rgpd_rules_2_comment-select">
+      <b-form-group id="rgpd_rules_2_comment" label="Commentaire du partenaire" label-for="rgpd_rules_2_comment-select">
         <b-form-input id="rgpd_rules_2_comment-input" v-model="formData.rgpd_2_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="rgpd_rules_2_impact" label="Nom du contact principal" label-for="rgpd_rules_2_impact-select">
+      <b-form-group id="rgpd_rules_2_impact" label="Impact" label-for="rgpd_rules_2_impact-select">
         <b-form-select id="rgpd_rules_2_impact-select" v-model="formData.rgpd_2_impact" :options="options2" required></b-form-select>
       </b-form-group>d
-      <b-form-group id="rgpd_rules_2_engie" label="Nom du contact principal" label-for="rgpd_rules_2_engie-select">
+      <b-form-group id="rgpd_rules_2_engie" label="Commentaire EHS" label-for="rgpd_rules_2_engie-select">
         <b-form-input id="rgpd_rules_2_engie-input" v-model="formData.rgpd_2_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Envoyer</b-button>

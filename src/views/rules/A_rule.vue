@@ -5,7 +5,7 @@
       <b-form-group id="a_rules_1" label="Les données d'EHS stockées par le partenaire sont chiffrées" label-for="a_rules_1-select">
         <b-form-select id="a_rules_1-select" v-model="formData.a_1" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="a_rules_1_comment" label="Commentaire" label-for="a_rules_1_comment-select">
+      <b-form-group id="a_rules_1_comment" label="Commentaire du partenaire" label-for="a_rules_1_comment-select">
         <b-form-input id="a_rules_1_comment-input" v-model="formData.a_1_comment"></b-form-input>
       </b-form-group>
       <b-form-group id="a_rules_1_impact" label="Impact" label-for="a_rules_1_impact-select">
@@ -17,7 +17,7 @@
       <b-form-group id="a_rules_2" label="Le partenaire doit assurer la réversibilité en fin de contrat ou suite à l’activation de la clause de réversibilité" label-for="a_rules_2-select">
         <b-form-select id="a_rules_2-select" v-model="formData.a_2" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="a_rules_2_comment" label="Commentaire" label-for="a_rules_2_comment-select">
+      <b-form-group id="a_rules_2_comment" label="Commentaire du partenaire" label-for="a_rules_2_comment-select">
         <b-form-input id="a_rules_2_comment-input" v-model="formData.a_2_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-form-group id="a_rules_2_impact" label="Impact" label-for="a_rules_2_impact-select">
@@ -29,7 +29,7 @@
       <b-form-group id="a_rules_3" label="Il existe une procédure permettant de prouver la restitution ou la destruction des actifs (données et support) sur les environnement du partenaire et ses sous-traitants" label-for="a_rules_3-select">
         <b-form-select id="a_rules_3-select" v-model="formData.a_3" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="a_rules_3_comment" label="Commentaire" label-for="a_rules_3_comment-select">
+      <b-form-group id="a_rules_3_comment" label="Commentaire du partenaire" label-for="a_rules_3_comment-select">
         <b-form-input id="a_rules_3_comment-input" v-model="formData.a_3_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-form-group id="a_rules_3_impact" label="Impact" label-for="a_rules_3_impact-select">
@@ -41,7 +41,7 @@
       <b-form-group id="a_rules_4" label="Le partenaire doit envoyer a EHS une preuve de blanchissement des serveurs si le contrat le prévoit" label-for="a_rules_4-select">
         <b-form-select id="a_rules_4-select" v-model="formData.a_4" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="a_rules_4_comment" label="Commentaire" label-for="a_rules_4_comment-select">
+      <b-form-group id="a_rules_4_comment" label="Commentaire du partenaire" label-for="a_rules_4_comment-select">
         <b-form-input id="a_rules_4_comment-input" v-model="formData.a_4_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-form-group id="a_rules_4_impact" label="Impact" label-for="a_rules_4_impact-select">

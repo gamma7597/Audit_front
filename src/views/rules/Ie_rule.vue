@@ -2,28 +2,29 @@
   <div>
     <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
     <b-form @submit.prevent="handleSubmit">
-      <b-form-group id="ie_rules_1" label="Nom du contact principal" label-for="ie_rules_1-select">
+      <b-form-group id="ie_rules_1" label="Le partenaire maintient un inventaire des postes de travail, serveurs, shares, applicatifs et équipements de sécurité utilisés dans le cadre de la prestation" label-for="ie_rules_1-select">
         <b-form-select id="ie_rules_1-select" v-model="formData.ie_1" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="ie_rules_1_comment" label="Nom du contact principal" label-for="ie_rules_1_comment-select">
+      <b-form-group id="ie_rules_1_comment" label="Commentaire du partenaire" label-for="ie_rules_1_comment-select">
         <b-form-input id="ie_rules_1_comment-input" v-model="formData.ie_1_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="ie_rules_1_impact" label="Nom du contact principal" label-for="ie_rules_1_impact-select">
+      <b-form-group id="ie_rules_1_impact" label="Impact" label-for="ie_rules_1_impact-select">
         <b-form-select id="ie_rules_1_impact-select" v-model="formData.ie_1_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="ie_rules_1_engie" label="Nom du contact principal" label-for="ie_rules_1_engie-select">
+      <b-form-group id="ie_rules_1_engie" label="Commentaire EHS" label-for="ie_rules_1_engie-select">
         <b-form-input id="ie_rules_1_engie-input" v-model="formData.ie_1_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="ie_rules_2" label="Nom du contact principal" label-for="ie_rules_2-select">
+      <b-form-group id="ie_rules_2" label="Le partenaire maintient un inventaire des instances et/ou applicatifs cloud accédés.
+Précisez le(s) hébergeur(s) concerné(s)." label-for="ie_rules_2-select">
         <b-form-select id="ie_rules_2-select" v-model="formData.ie_2" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="ie_rules_2_comment" label="Nom du contact principal" label-for="ie_rules_2_comment-select">
+      <b-form-group id="ie_rules_2_comment" label="Commentaire du partenaire" label-for="ie_rules_2_comment-select">
         <b-form-input id="ie_rules_2_comment-input" v-model="formData.ie_2_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="ie_rules_2_impact" label="Nom du contact principal" label-for="ie_rules_2_impact-select">
+      <b-form-group id="ie_rules_2_impact" label="Impact" label-for="ie_rules_2_impact-select">
         <b-form-select id="ie_rules_2_impact-select" v-model="formData.ie_2_impact" :options="options2" required></b-form-select>
       </b-form-group>d
-      <b-form-group id="ie_rules_2_engie" label="Nom du contact principal" label-for="ie_rules_2_engie-select">
+      <b-form-group id="ie_rules_2_engie" label="Commentaire EHS" label-for="ie_rules_2_engie-select">
         <b-form-input id="ie_rules_2_engie-input" v-model="formData.ie_2_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Envoyer</b-button>

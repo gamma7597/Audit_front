@@ -2,64 +2,65 @@
   <div>
     <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
     <b-form @submit.prevent="handleSubmit">
-      <b-form-group id="pt_rules_1" label="Nom du contact principal" label-for="pt_rules_1-select">
+      <b-form-group id="pt_rules_1" label="EHS doit être en mesure de réaliser des audits organisationnels sur le périmètre du service fourni à EHS " label-for="pt_rules_1-select">
         <b-form-select id="pt_rules_1-select" v-model="formData.pt_1" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_1_comment" label="Nom du contact principal" label-for="pt_rules_1_comment-select">
+      <b-form-group id="pt_rules_1_comment" label="Commentaire du partenaire" label-for="pt_rules_1_comment-select">
         <b-form-input id="pt_rules_1_comment-input" v-model="formData.pt_1_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_1_impact" label="Nom du contact principal" label-for="pt_rules_1_impact-select">
+      <b-form-group id="pt_rules_1_impact" label="Impact" label-for="pt_rules_1_impact-select">
         <b-form-select id="pt_rules_1_impact-select" v-model="formData.pt_1_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_1_engie" label="Nom du contact principal" label-for="pt_rules_1_engie-select">
+      <b-form-group id="pt_rules_1_engie" label="Commentaire EHS" label-for="pt_rules_1_engie-select">
         <b-form-input id="pt_rules_1_engie-input" v-model="formData.pt_1_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_2" label="Nom du contact principal" label-for="pt_rules_2-select">
+      <b-form-group id="pt_rules_2" label="EHS doit être en mesure de réaliser des audits techniques (test d'intrusion, scan de vulnérabilité, audit de code, audit d'infrastructure) 
+sur le périmètre du service fourni à EHS " label-for="pt_rules_2-select">
         <b-form-select id="pt_rules_2-select" v-model="formData.pt_2" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_2_comment" label="Nom du contact principal" label-for="pt_rules_2_comment-select">
+      <b-form-group id="pt_rules_2_comment" label="Commentaire du partenaire" label-for="pt_rules_2_comment-select">
         <b-form-input id="pt_rules_2_comment-input" v-model="formData.pt_2_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_2_impact" label="Nom du contact principal" label-for="pt_rules_2_impact-select">
+      <b-form-group id="pt_rules_2_impact" label="Impact" label-for="pt_rules_2_impact-select">
         <b-form-select id="pt_rules_2_impact-select" v-model="formData.pt_2_impact" :options="options2" required></b-form-select>
       </b-form-group>d
-      <b-form-group id="pt_rules_2_engie" label="Nom du contact principal" label-for="pt_rules_2_engie-select">
+      <b-form-group id="pt_rules_2_engie" label="Commentaire EHS" label-for="pt_rules_2_engie-select">
         <b-form-input id="pt_rules_2_engie-input" v-model="formData.pt_2_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_3" label="Nom du contact principal" label-for="pt_rules_3-select">
+      <b-form-group id="pt_rules_3" label="EHS doit être en mesure de réaliser des audits de la sécurité physique sur le périmètre du service fourni à EHS" label-for="pt_rules_3-select">
         <b-form-select id="pt_rules_3-select" v-model="formData.a_3" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_3_comment" label="Nom du contact principal" label-for="pt_rules_3_comment-select">
+      <b-form-group id="pt_rules_3_comment" label="Commentaire du partenaire" label-for="pt_rules_3_comment-select">
         <b-form-input id="pt_rules_3_comment-input" v-model="formData.pt_3_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_3_impact" label="Nom du contact principal" label-for="pt_rules_3_impact-select">
+      <b-form-group id="pt_rules_3_impact" label="Impact" label-for="pt_rules_3_impact-select">
         <b-form-select id="pt_rules_3_impact-select" v-model="formData.pt_3_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_3_engie" label="Nom du contact principal" label-for="pt_rules_3_engie-select">
+      <b-form-group id="pt_rules_3_engie" label="Commentaire EHS" label-for="pt_rules_3_engie-select">
         <b-form-input id="pt_rules_3_engie-input" v-model="formData.pt_3_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_4" label="Nom du contact principal" label-for="pt_rules_4-select">
+      <b-form-group id="pt_rules_4" label="Le partenaire doit régulièrement évaluer le niveau de sécurité de ses périmètres sensibles ou exposés par le biais de tests d'intrusion et de scan de vulnérabilités et corriger les vulnérabilités découvertes" label-for="pt_rules_4-select">
         <b-form-select id="pt_rules_4-select" v-model="formData.a_4" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_4_comment" label="Nom du contact principal" label-for="pt_rules_4_comment-select">
+      <b-form-group id="pt_rules_4_comment" label="Commentaire du partenaire" label-for="pt_rules_4_comment-select">
         <b-form-input id="pt_rules_4_comment-input" v-model="formData.pt_4_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_4_impact" label="Nom du contact principal" label-for="pt_rules_4_impact-select">
+      <b-form-group id="pt_rules_4_impact" label="Impact" label-for="pt_rules_4_impact-select">
         <b-form-select id="pt_rules_4_impact-select" v-model="formData.pt_4_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_4_engie" label="Nom du contact principal" label-for="pt_rules_4_engie-select">
+      <b-form-group id="pt_rules_4_engie" label="Commentaire EHS" label-for="pt_rules_4_engie-select">
         <b-form-input id="pt_rules_4_engie-input" v-model="formData.pt_4_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_5" label="Nom du contact principal" label-for="pt_rules_5-select">
+      <b-form-group id="pt_rules_5" label="Le partenaire doit corriger les éventuelles vulnérabilités qui lui sont imputables (tierces parties incluses), selon un planning qui sera défini en collaboration avec EHS" label-for="pt_rules_5-select">
         <b-form-select id="pt_rules_5-select" v-model="formData.a_5" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_5_comment" label="Nom du contact principal" label-for="pt_rules_5_comment-select">
+      <b-form-group id="pt_rules_5_comment" label="Commentaire du partenaire" label-for="pt_rules_5_comment-select">
         <b-form-input id="pt_rules_5_comment-input" v-model="formData.pt_5_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="pt_rules_5_impact" label="Nom du contact principal" label-for="pt_rules_5_impact-select">
+      <b-form-group id="pt_rules_5_impact" label="Impact" label-for="pt_rules_5_impact-select">
         <b-form-select id="pt_rules_5_impact-select" v-model="formData.pt_5_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="pt_rules_5_engie" label="Nom du contact principal" label-for="pt_rules_5_engie-select">
+      <b-form-group id="pt_rules_5_engie" label="Commentaire EHS" label-for="pt_rules_5_engie-select">
         <b-form-input id="pt_rules_5_engie-input" v-model="formData.pt_5_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Envoyer</b-button>

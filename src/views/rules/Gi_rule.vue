@@ -2,40 +2,42 @@
   <div>
     <b-button :to="'/rules/'+partner.company" variant="success">Retour</b-button>
     <b-form @submit.prevent="handleSubmit">
-      <b-form-group id="gi_rules_1" label="Nom du contact principal" label-for="gi_rules_1-select">
+      <b-form-group id="gi_rules_1" label="Un système de surveillance et d'alerte en cas d'incident de sécurité est présent" label-for="gi_rules_1-select">
         <b-form-select id="gi_rules_1-select" v-model="formData.gi_1" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="gi_rules_1_comment" label="Nom du contact principal" label-for="gi_rules_1_comment-select">
+      <b-form-group id="gi_rules_1_comment" label="Commentaire du partenaire" label-for="gi_rules_1_comment-select">
         <b-form-input id="gi_rules_1_comment-input" v-model="formData.gi_1_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="gi_rules_1_impact" label="Nom du contact principal" label-for="gi_rules_1_impact-select">
+      <b-form-group id="gi_rules_1_impact" label="Impact" label-for="gi_rules_1_impact-select">
         <b-form-select id="gi_rules_1_impact-select" v-model="formData.gi_1_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="gi_rules_1_engie" label="Nom du contact principal" label-for="gi_rules_1_engie-select">
+      <b-form-group id="gi_rules_1_engie" label="Commentaire EHS" label-for="gi_rules_1_engie-select">
         <b-form-input id="gi_rules_1_engie-input" v-model="formData.gi_1_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="gi_rules_2" label="Nom du contact principal" label-for="gi_rules_2-select">
+      <b-form-group id="gi_rules_2" label="Un système de résolution d'incident est présent" label-for="gi_rules_2-select">
         <b-form-select id="gi_rules_2-select" v-model="formData.gi_2" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="gi_rules_2_comment" label="Nom du contact principal" label-for="gi_rules_2_comment-select">
+      <b-form-group id="gi_rules_2_comment" label="Commentaire du partenaire" label-for="gi_rules_2_comment-select">
         <b-form-input id="gi_rules_2_comment-input" v-model="formData.gi_2_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="gi_rules_2_impact" label="Nom du contact principal" label-for="gi_rules_2_impact-select">
+      <b-form-group id="gi_rules_2_impact" label="Impact" label-for="gi_rules_2_impact-select">
         <b-form-select id="gi_rules_2_impact-select" v-model="formData.gi_2_impact" :options="options2" required></b-form-select>
       </b-form-group>d
-      <b-form-group id="gi_rules_2_engie" label="Nom du contact principal" label-for="gi_rules_2_engie-select">
+      <b-form-group id="gi_rules_2_engie" label="Commentaire EHS" label-for="gi_rules_2_engie-select">
         <b-form-input id="gi_rules_2_engie-input" v-model="formData.gi_2_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="gi_rules_3" label="Nom du contact principal" label-for="gi_rules_3-select">
+      <b-form-group id="gi_rules_3" label="Il existe un processus pour alerter EHS rapidement en cas d'incident impactant le service du partenaire. 
+Ce processus doit être connu par tous les employés du partenaire.
+Préciser les délais de notification." label-for="gi_rules_3-select">
         <b-form-select id="gi_rules_3-select" v-model="formData.a_3" :options="options" required></b-form-select>
       </b-form-group>
-      <b-form-group id="gi_rules_3_comment" label="Nom du contact principal" label-for="gi_rules_3_comment-select">
+      <b-form-group id="gi_rules_3_comment" label="Commentaire du partenaire" label-for="gi_rules_3_comment-select">
         <b-form-input id="gi_rules_3_comment-input" v-model="formData.gi_3_comment" placeholder="Commentaire"></b-form-input>
       </b-form-group>
-      <b-form-group id="gi_rules_3_impact" label="Nom du contact principal" label-for="gi_rules_3_impact-select">
+      <b-form-group id="gi_rules_3_impact" label="Impact" label-for="gi_rules_3_impact-select">
         <b-form-select id="gi_rules_3_impact-select" v-model="formData.gi_3_impact" :options="options2" required></b-form-select>
       </b-form-group>
-      <b-form-group id="gi_rules_3_engie" label="Nom du contact principal" label-for="gi_rules_3_engie-select">
+      <b-form-group id="gi_rules_3_engie" label="Commentaire EHS" label-for="gi_rules_3_engie-select">
         <b-form-input id="gi_rules_3_engie-input" v-model="formData.gi_3_engie" placeholder="Commentaire"></b-form-input>
       </b-form-group>
       <b-button type="submit" variant="primary">Envoyer</b-button>
