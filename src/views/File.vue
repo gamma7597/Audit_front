@@ -28,13 +28,13 @@
     </label>
 
     <button class="btn btn-success" :disabled="!selectedFiles" @click="upload">
-      Upload
+      Ajouter le fichier
     </button>
 
     <div class="alert alert-light" role="alert">{{ message }}</div>
 
     <div class="card">
-      <div class="card-header">List of Files</div>
+      <div class="card-header">Liste des fichiers</div>
       <ul class="list-group list-group-flush">
         <li
           class="list-group-item"
@@ -43,7 +43,7 @@
         >
           <a :href="file.url">{{ file.name }}</a>
           <button class="btn btn-warning" @click="deleteFile(file)">
-            Delete
+            Supprimer
           </button>
         </li>
       </ul>

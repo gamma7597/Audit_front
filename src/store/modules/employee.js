@@ -1,6 +1,6 @@
 import Axios from 'axios'
 
-const url = 'https://localhost:8081/'
+const url = 'http://localhost:8081/'
 
 const state = () => ({
   employees: []
